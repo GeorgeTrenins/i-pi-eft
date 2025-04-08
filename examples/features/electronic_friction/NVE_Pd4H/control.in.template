@@ -1,0 +1,17 @@
+xc                        pz-lda
+relativistic              atomic_zora scalar
+spin                      none 
+k_grid                    3 3 3 
+
+# Friction
+calculate_friction                 numerical_friction
+
+calculate_all_eigenstates          .true.
+friction_iter_limit                50
+friction_window_size               0.02
+friction_output_tensor_grid        .true.
+friction_discretization_length     0.01
+friction_max_energy                0.50
+
+communicate_pimd_wrapper           friction  0.05
+use_pimd_wrapper                   UNIX:pd4h-md.1  1234

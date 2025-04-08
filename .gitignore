@@ -18,3 +18,5 @@ regtest-ref
 /dist
 *.egg-info/
 ipi/_version.py
+*.code-workspace
+.venv

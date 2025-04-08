@@ -1,0 +1,6 @@
+control.in
+aims.out
+friction_tensor*
+log.i-pi
+simulation.*
+total_force.dat
